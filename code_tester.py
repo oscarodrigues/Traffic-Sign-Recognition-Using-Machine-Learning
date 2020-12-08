@@ -48,7 +48,7 @@ classes = { 1:'Speed Limit (20km/h)',
             42:'End of No Passing',      
             43:'End of No Passing Vehicles Over 3.5 Tons' }
 
-image = Image.open('E:/Documents/University of Windsor/Subjects/4th Year/2nd Semester/Sensor and Vision Systems/Labs and Projects/Project/Traffic Sign Classification/tsrd-test/00034.png')
+image = Image.open('%Directory to tsrd-test%/00034.png')
 image = image.resize((30,30))
 image = np.expand_dims(image, axis=0)
 image = np.array(image)
@@ -56,7 +56,7 @@ pred = model.predict_classes([image])[0]
 sign = classes[pred+1]
 print(sign)
 
-image = Image.open('E:/Documents/University of Windsor/Subjects/4th Year/2nd Semester/Sensor and Vision Systems/Labs and Projects/Project/Traffic Sign Classification/tsrd-test/00350.png')
+image = Image.open('%Directory to tsrd-test%/00350.png')
 image = image.resize((30,30))
 image = np.expand_dims(image, axis=0)
 image = np.array(image)
@@ -64,7 +64,7 @@ pred = model.predict_classes([image])[0]
 sign = classes[pred+1]
 print(sign)
 
-image = Image.open('E:/Documents/University of Windsor/Subjects/4th Year/2nd Semester/Sensor and Vision Systems/Labs and Projects/Project/Traffic Sign Classification/tsrd-test/00461.png')
+image = Image.open('%Directory to tsrd-test%/00461.png')
 image = image.resize((30,30))
 image = np.expand_dims(image, axis=0)
 image = np.array(image)
@@ -72,7 +72,7 @@ pred = model.predict_classes([image])[0]
 sign = classes[pred+1]
 print(sign)
 
-image = Image.open('E:/Documents/University of Windsor/Subjects/4th Year/2nd Semester/Sensor and Vision Systems/Labs and Projects/Project/Traffic Sign Classification/tsrd-test/00522.png')
+image = Image.open('%Directory to tsrd-test%/00522.png')
 image = image.resize((30,30))
 image = np.expand_dims(image, axis=0)
 image = np.array(image)
@@ -80,7 +80,7 @@ pred = model.predict_classes([image])[0]
 sign = classes[pred+1]
 print(sign)
 
-image = Image.open('E:/Documents/University of Windsor/Subjects/4th Year/2nd Semester/Sensor and Vision Systems/Labs and Projects/Project/Traffic Sign Classification/tsrd-test/00998.png')
+image = Image.open('%Directory to tsrd-test%/00998.png')
 image = image.resize((30,30))
 image = np.expand_dims(image, axis=0)
 image = np.array(image)
